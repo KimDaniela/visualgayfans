@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+
+:root {
+    --color-primario: blueviolet; 
+    --color-secundario: rgb (78, 10, 141);
+    --color-terciario: #1230ae;
+    --color-cuarto: darkblue;
+    --color-quinto: darkgreen;
+    --color-sexto: indigo;
+    --color-septimo: violet;
+    --color-octavo: rebeccapurple;
+    --fuente-gotic: "Grenze Gotisch", serif;
+    
+}
+body { 
+background-color:rgb(154, 138, 247);
+color: #FFF7F7;
+box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 10%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link{
+    font-family: "Grenze Gotisch", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:rgb(78, 10, 141);
+    text-align: none;
+}
+
+
+strong {
+    color:rgb(78, 10, 141);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+spand {
+    color:var(--color-sexto);
+border: 1px dotted #1230ae;
+padding: 1px;
+}
+
+.redes-destaque {
+    color: var(--color-cuarto);
+    font-family: "Grenze Gotisch", serif;
+}
+
+.visitar-destaque {
+    color:darkgreen;
+    font-family:var(--fuente-gotic);
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    padding: 5% 5%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.inicio_contenido {
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.inicio_contenido_titulo {
+font-size: 2.25rem;
+font-family:var(--fuente-gotic);
+text-align: center;
+}
+
+.inicio_contenido_texto {
+font-size: 25px;
+font-family:var(--fuente-gotic);
+}
+
+.texto1 {
+    font-family:var(--fuente-gotic);
+}
+
+
+.inicio__enlaces {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items:center ;
+gap: 32px;
+}
+
+.inicio_img{
+width: 50%;
+}
+
+.nuestras_redes {
+    font-family:var(--fuente-gotic);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rebeccapurple;
+}
+
+.inicio_redes {
+    width: 50%;
+    color: violet;
+    text-align: center;
+    padding: 15.5px 5px;
+    border-radius: 8px;
+    font-family:var(--fuente-gotic);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color:black;
+    border: 10px dotted blueviolet;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.inicio_redes:hover{
+background-color: rgb(153, 92, 211);
+}
+
+strong:hover {
+background-color: blueviolet;
+}
+
+.footer {
+    background-color: blueviolet;
+    padding: 1.5rem;
+    color:rgb(78, 10, 141);
+    justify-content: center;
+    font-family:var(--fuente-gotic);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .inicio {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .header_menu {
+    justify-content: center;
+}
+
+.inicio_contenido {
+    width: auto;
+}
+
+}
