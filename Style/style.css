@@ -13,7 +13,7 @@
 }
 
 body { 
-    background-color: var(--color-primario) !important; /* Se usa la variable */
+    background-color: blueviolet; !important; /* Se usa la variable */
     color: #FFF7F7;
     font-family: var(--fuente-gotica) !important; /* Se asegura que la fuente se aplique */
     box-sizing: border-box;
