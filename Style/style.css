@@ -2,19 +2,20 @@
 
 :root {
     --color-primario: blueviolet; 
-    --color-secundario: rgb(78, 10, 141); /* Se corrigió el espacio extra en rgb() */
+    --color-secundario: rgb(78, 10, 141);
     --color-terciario: #1230ae;
     --color-cuarto: darkblue;
     --color-quinto: darkgreen;
     --color-sexto: indigo;
     --color-septimo: violet;
     --color-octavo: rebeccapurple;
-    --fuente-gotica: "Grenze Gotisch", serif; /* Se corrigió el nombre de la variable */
+    --fuente-gotica: "Grenze Gotisch"; /* Eliminado "serif" para evitar conflictos */
 }
 
 body { 
-    background-color: rgb(154, 138, 247);
+    background-color: var(--color-primario) !important; /* Se usa la variable */
     color: #FFF7F7;
+    font-family: var(--fuente-gotica) !important; /* Se asegura que la fuente se aplique */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-secundario);
-    text-decoration: none; /* Se corrigió text-align: none; por text-decoration: none; */
+    text-decoration: none; 
 }
 
 strong {
@@ -45,7 +46,7 @@ h1 {
     font-weight: bold;
 }
 
-span { /* Se corrigió "spand" por "span" */
+span { 
     color: var(--color-sexto);
     border: 1px dotted var(--color-terciario);
     padding: 1px;
